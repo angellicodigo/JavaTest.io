@@ -1,4 +1,4 @@
-for(var i=100;i>0;i--){
+for(var i=10;i>0;i--){
   document.write("Number: " + i + "<br>")
 }
 
@@ -9,12 +9,14 @@ while(start >= end){
   start=start-10;
 }
 
-for(var i=0; i<=9;i++){
-  document.write("Random Number " + rng + "<br>")
+for(var i=0; i<=10;i++){
+  document.write("Random Number: " + rng + "<br>")
   var rng = Math.floor(Math.random() * 10)+1;
  }
 
-var x = readInt("Put a perfect square");
-var y = Math.sqrt(x);
-
-document.write(y)
+for(var i=0; i<=10;i++){
+  var rand = Math.floor(Math.random() * 10)+1;
+  var sqrt = Math.sqrt(rng)
+  
+  document.write("Random Squared Number: " + sqrt + "<br>")
+ }
