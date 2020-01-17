@@ -1,11 +1,11 @@
 for(var i=10;i>0;i--){
-  document.write("Number: " + i + "<br>")
+  document.write("For Loop Number: " + i + "<br>")
 }
 
 var start = 100;
 var end = 0;
 while(start >= end){
-  document.write("Count: " + start + "<br>")
+  document.write("While Count: " + start + "<br>")
   start=start-10;
 }
 
