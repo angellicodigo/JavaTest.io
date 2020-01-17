@@ -16,7 +16,7 @@ for(var x=0; x<=10;x++){
 
 for(var y=0; y<=10;y++){
   var rand = Math.floor(Math.random() * 10)+1;
-  var sqrt = Math.sqrt(rng)
+  var sqrt = Math.sqrt(rand)
   
   document.write("Random Squared Number: " + sqrt + "<br>")
  }
