@@ -14,7 +14,7 @@ for(var x=0; x<=10;x++){
   var rng = Math.floor(Math.random() * 10)+1;
  }
 
-for(var y=0; y<=10;y++){
+for(var y=0; y<=5;y++){
   var rand = Math.floor(Math.random() * 10)+1;
   var sqrt = Math.sqrt(rand)
   
