@@ -20,3 +20,13 @@ for(var y=0; y<=5;y++){
   
   document.write("Random Squared Number: " + sqrt + "<br>")
  }
+
+function myLoop(){
+  var end =  document.getElementById("end").value;
+    var start = document.getElementById("start").value;
+
+
+  for(var i=start;i<=end;i++){
+    document.write('<p>'+i);
+  }
+}
