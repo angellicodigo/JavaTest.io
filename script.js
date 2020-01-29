@@ -42,3 +42,27 @@ console.log(typeof start);
     document.write('<p>'+i);
   }
 }
+function myGrades(){
+  var g1=document.getElementById("grade1").value;
+  var g2=document.getElementById("grade2").value;
+  var g3=document.getElementById("grade3").value;
+  var g4=document.getElementById("grade4").value;
+  var g5=document.getElementById("grade5").value;
+  
+  g1=Number(g1);
+  g2=Number(g2);
+  g3=Number(g3);
+  g4=Number(g4);
+  g5=Number(g5);
+  
+  console.log(g1);
+  console.log(g2);
+  console.log(g3);
+  console.log(g4);
+  console.log(g5);
+  
+  var lowest = Math.min(g1,g2,g3,g4,g5);
+  var avg = (g1+g2+g3+g4+g5-lowest)/4;
+  avg = avg.toFixed(2);
+  document.getElementById("avg").innerHTML="Your average grade is " + avg;
+}
