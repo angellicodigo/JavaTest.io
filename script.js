@@ -65,4 +65,6 @@ function myGrades(){
   var avg = (g1+g2+g3+g4+g5-lowest)/4;
   avg = avg.toFixed(2);
   document.getElementById("avg").innerHTML="Your average grade is " + avg;
+  var round = Math.ceil(avg);
+  document.getElementById("round").innerHTML="Your grade is close to "+round;
 }
