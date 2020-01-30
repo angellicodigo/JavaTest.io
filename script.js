@@ -66,5 +66,33 @@ function myGrades(){
   avg = avg.toFixed(2);
   document.getElementById("avg").innerHTML="Your average grade is " + avg;
   var round = Math.ceil(avg);
-  document.getElementById("round").innerHTML="Your grade is close to "+round;
+  var round2= Math.round(avg);
+  document.getElementById("round").innerHTML="Your grade is close to "+round+ " or "+round2;
+}
+function data(){
+  var x1 =        document.getElementById("firstx").value;
+  var x2 = document.getElementById("secondx").value;
+  var y1 = document.getElementById("firsty").value;
+  var y2 = document.getElementById("secondy").value;
+  x1=Number(x1);
+  x2=Number(x2);
+  y1=Number(y1);
+  y2=Number(y2);
+  console.log(x1);
+   console.log(x2);
+   console.log(y1);
+   console.log(y2);
+  
+  var sx=x2-x1;
+  var sy=y2-y1;
+  
+  var Sx=Math.pow(sx,2);
+  var Sy=Math.pow(sy,2);
+  
+  var add=Sx+Sy;
+  
+  var ans=Math.sqrt(add,2);
+  ans = ans.toFixed(2);
+   document.getElementById("button").innerHTML=ans;
+  
 }
