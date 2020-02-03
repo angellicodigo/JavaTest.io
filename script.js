@@ -65,9 +65,8 @@ function myGrades(){
   var avg = (g1+g2+g3+g4+g5-lowest)/4;
   avg = avg.toFixed(2);
   document.getElementById("avg").innerHTML="Your average grade is " + avg;
-  var round = Math.ceil(avg);
-  var round2= Math.round(avg);
-  document.getElementById("round").innerHTML="Your grade is close to "+round+ " or "+round2;
+  var round = Math.round(avg);
+  document.getElementById("round").innerHTML="Your grade is close to "+round;
 }
 function data(){
   var x1 =        document.getElementById("firstx").value;
